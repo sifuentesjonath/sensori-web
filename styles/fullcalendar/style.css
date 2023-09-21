@@ -1,0 +1,125 @@
+:root {
+	--color-purple: #4a369b;
+	--color-gray: #385574;
+	--color-textBlue: #438cbf;
+	--color-backgroundBlue: #0b2532;
+	--color-lowGray: #e9ebef;
+	--color-buttonBlue: #164760;
+	--color-green: #4adf84;
+	--color-white: #fff;
+	--color-black: #0b2532;
+
+	--fc-button-bg-color: none;
+}
+
+/* ---- Header toolbar container ---- */
+.fc .fc-toolbar {
+	flex: 1 1 0;
+}
+
+/* ---- Button styling for header toolbar ---- */
+
+/* {Month} {Year} label */
+.fc .fc-toolbar-title {
+	color: var(--color-white);
+	font-size: 1.2em;
+}
+
+/* Each toolbar-chunk in header-toolbar */
+.fc-header-toolbar .fc-toolbar-chunk {
+	display: flex;
+	align-items: center;
+}
+
+/* For all groups  */
+.fc-header-toolbar .fc-button-group {
+	gap: 5px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk button {
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+/* First GROUP selector, "left" [<-] [Today] [->] */
+.fc-header-toolbar .fc-toolbar-chunk:first-child button {
+	border-radius: 6px 0px 0px 6px;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1460px) {
+	.fc-header-toolbar .fc-toolbar-chunk:first-child h2 {
+		display: none;
+	}
+}
+
+/* Second button of "left" [<-] **[Today]** [->]    */
+.fc-header-toolbar .fc-toolbar-chunk:first-child button:nth-child(2) {
+	opacity: 1;
+	width: 6rem;
+}
+
+/* Third button of "left" [<-] [Today] **[->]**     */
+.fc-header-toolbar .fc-toolbar-chunk:first-child button:nth-child(3) {
+	border-radius: 0px 6px 6px 0px;
+}
+
+/* ---- Second GROUP selector, "left" [Day] [Week] [Month] [Year] ---- */
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) button {
+	border: none;
+	color: var(--color-textBlue);
+}
+
+/* Active */
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) .fc-button-active {
+	background-color: var(--color-textBlue);
+	border-radius: 0.75rem;
+	color: var(--color-white);
+	padding: 0.5rem 2rem;
+}
+
+/* ---- Third button of group selector [New Appointment] ---- */
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+	width: 8rem;
+}
+
+.fc .fc-view-harness {
+	background-color: var(--color-white);
+}
+
+/** ---- Day slot in week view ---- **/
+.fc .fc-col-header-cell-cushion {
+	display: flex;
+}
+
+/** ---- Time in TimeGridWeek view ---- **/
+
+/* removing most external borders */
+.fc-theme-standard .fc-scrollgrid {
+	border: 0;
+}
+
+/* first row, just the blank corner */
+.fc-col-header colgroup col {
+	background-color: var(--color-buttonBlue);
+}
+
+/* rest of column */
+.fc-timegrid-body colgroup {
+	background-color: var(--color-buttonBlue);
+	border: 0;
+}
+
+/** WIP **/
+/* .fc-scrollgrid  .fc-scrollgrid-liquid tr {
+	border: 0;
+} */
+
+.full-calendar-wrapper table thead tr th:first-child.fc-timegrid-axis,
+.full-calendar-wrapper .fc-timegrid-body table tbody tr td:first-child {
+	border: 0;
+	color: var(--color-textBlue);
+	font-size: 16px;
+	font-weight: 500;
+}

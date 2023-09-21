@@ -1,0 +1,8 @@
+.apexcharts-legend-text tspan:nth-child(1) {
+	font-weight: lighter;
+	color: #fff;
+}
+
+.apexcharts-legend-text tspan:nth-child(3) {
+	font-weight: bold;
+}

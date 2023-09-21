@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"outDir": "dist",
+		"skipLibCheck": true,
+		"strict": false,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"incremental": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@components/*": ["components/*"],
+			"@containers/*": ["containers/*"],
+			"@utils/*": ["utils/*"],
+			"@styles/*": ["styles/*"],
+			"@app/*": ["app/*"],
+			"@auth/*": ["auth/*"],
+			"@public/*": ["public/*"],
+			"@service/*": ["service/*"],
+			"@screens/*": ["screens/*"],
+			"@redux/*": ["redux/*"],
+			"@hooks/*": ["hooks/*"],
+			"@layout/*": ["layout/*"],
+			"@cypress/*": ["cypress/*"],
+			"@/*": ["./*"]
+		}
+	},
+	"include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}

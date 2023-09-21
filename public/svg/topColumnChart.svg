@@ -1,0 +1,32 @@
+<svg width="102" height="16" viewBox="0 0 102 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="102" height="16" fill="#E5E5E5"/>
+<g id="Current Session">
+<rect width="1440" height="1030" transform="translate(-1013 -615)" fill="url(#paint0_radial_0_1)"/>
+<rect id="Rectangle 4951" x="-992" y="-594" width="1398" height="985" rx="23" fill="#164760" stroke="#0ADF9A" stroke-width="2"/>
+<g id="3D Round Column">
+<g id="01">
+<g id="Group 113">
+<g id="BG" opacity="0.2">
+<g id="3D Round Column/Body" opacity="0.6">
+<rect id="Rectangle 394" y="8" width="50.8333" height="285" fill="#E2C631"/>
+</g>
+<g id="3D Round Column/Body_2" opacity="0.6">
+<rect id="Rectangle 394_2" width="50.8333" height="285" transform="matrix(-1 0 0 1 101.667 8)" fill="#E2C631"/>
+</g>
+<g id="3D Round Column/Top">
+<g id="Group 112">
+<ellipse id="Ellipse 46" cx="50.8333" cy="8" rx="50.8333" ry="8" fill="#E2C631"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 85.5) rotate(34.1093) scale(1175.16 1160.94)">
+<stop offset="0.426051" stop-color="#0E2D3D"/>
+<stop offset="1" stop-color="#081B25"/>
+</radialGradient>
+</defs>
+</svg>

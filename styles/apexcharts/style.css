@@ -1,0 +1,18 @@
+.apexcharts-legend-text span:nth-child(1) {
+	font-weight: lighter;
+	color: #fff;
+}
+
+.apexcharts-legend-text tspan:nth-child(3) {
+	font-weight: bold;
+}
+
+.apexcharts-canvas,
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+.apexcharts-menu-icon {
+	display: none;
+}
